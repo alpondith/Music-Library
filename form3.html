@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>Searching for a student...</title>
+</head>
+
+<body bgcolor=#ffffff>
+
+<h2>Search</h2>
+
+<form name="search" method="get" action="search3.php">
+    Seach for: <label for="find"> find:</label>
+    <input type="text" name="find" id="find" /> in
+    <label for="field">field</label>
+    <Select NAME="field" id="field">
+        // name, artist, id inside "" are the area in the database you want to search in
+        <Option VALUE="Song_Name">Name</option>
+        <Option VALUE="ArtistName">Artist</option>
+        <Option VALUE="Id">Id</option>
+    </Select>
+
+    <input type="hidden" name="searching" value="yes" />
+    <input type="submit" name="search" value="Search" />
+</form>
+
+</body>
+
+</html>

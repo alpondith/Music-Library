@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin login</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+
+
+
+
+    <div id="myNav" class="overlay">
+        <span class="overlyButton" onclick="openNav()">&#9776;</span>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="admin_login.html">Admin Login</a>
+            <a href="SearchPanel.html">Search</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+
+
+    <div class="middle-div">
+        <div class="centerPosition">
+        <form class="divForm" action="login_checker.php" method="get">
+            <fieldset>
+                <legend>Login panel:</legend><br>
+                Username:<br><input type="text" name="username" placeholder="username..."><br>
+                Passwod:<br><input type="password" name="password" autocomplete="off" placeholder="password..."><br>
+                <input type="submit">
+                <input type="reset">
+            </fieldset>
+        </form>
+        </div>
+    </div>
+
+    <div class ="bottom-div">
+        <a href="AlbumTable_Form.php"><button class="button bottom-button"><span>Album</span></button></a>
+        <a href="ArtistTable_Form.php"><button class="button bottom-button"><span>Artist</span></button></a>
+        <a href="TrackTable_Form.php"><button class="button bottom-button"><span>Track</span></button></a>
+        <a href="PlaylistTable_Form.php"><button class="button bottom-button"><span>Playlist</span></button></a>
+        <a href="SearchPanel.html"><button class="button bottom-button"><span>Search</span></button></a>
+    </div>
+
+</div>
+<script src="javscript.js"></script>
+</body>
+</html>

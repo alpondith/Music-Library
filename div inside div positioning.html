@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>model</title>
+<style>
+	
+body{
+	margin: 0px;
+	padding: 0px;
+	}	
+	
+.container
+{
+    
+}
+.left-div
+{
+	position: absolute;
+    width: 70%;
+	height: 95%;
+	background-color: aqua;
+}
+.right-div
+{
+	right: 0;
+	position: absolute;
+    width: 30%;
+	height:95%;
+	background-color: blueviolet;
+}
+	
+.bottom-div{
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+	height: 5%;
+	background-color: coral;
+	
+}
+
+.left-inner{
+	height: 400px;
+	width: 400px;
+	background-color: red;
+	position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+.right-inner{
+	height: 200px;
+	width: 200px;
+	background-color: green;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+	<div class="left-div">
+	
+		<div class="left-inner"></div>
+		
+	</div>
+	
+	<div class="right-div">
+		
+		<div class="right-inner"></div>
+		
+	</div>
+	<div class="bottom-div"></div>
+</div>
+
+
+
+</body>
+</html>
